@@ -1,0 +1,43 @@
+This repository includes code adapted from third-party projects. Their
+original licenses apply to those portions of the code, in addition to the
+MIT License covering the rest of this repository (see LICENSE).
+
+--------------------------------------------------------------------------
+AdaFace  (detection/models/adaface/net.py, detection/models/adaface/loader.py)
+--------------------------------------------------------------------------
+Source: https://github.com/mk-minchul/AdaFace
+License: MIT License
+Copyright (c) 2022 Minchul Kim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------
+ArcFace / insightface  (detection/models/arcface/iresnet.py)
+--------------------------------------------------------------------------
+Source: https://github.com/deepinsight/insightface/blob/master/recognition/arcface_torch/backbones/iresnet.py
+License: MIT License (insightface project)
+
+The file in this repository is a minimal modification of the original:
+IResNetAdaInterface wraps IResNet to return a (features, norm) tuple instead
+of a plain tensor, matching the interface expected by this codebase's
+encode_backbone / encode_adapter functions. See the file header for details.
+
+Verify the current license terms of the insightface repository before
+redistributing this file, as license text in upstream open-source projects
+can change over time.

@@ -1,0 +1,58 @@
+# =========================
+# Core Python / Numerics
+# =========================
+numpy>=1.23,<2.0
+scipy>=1.9
+pandas>=1.5
+
+# =========================
+# Image / Data handling
+# =========================
+Pillow>=9.4
+opencv-python-headless>=4.7
+dlib>=19.24          # 68-point landmark extraction (morphing/export_landmarks.py)
+
+# =========================
+# PyTorch ecosystem
+# Install via: pip install torch==2.2.2+cu121 torchvision==0.17.2+cu121
+#              --index-url https://download.pytorch.org/whl/cu121
+# (CPU-only users can install plain `torch`/`torchvision` instead.)
+# =========================
+torch==2.2.2+cu121
+torchvision==0.17.2+cu121
+
+# =========================
+# Training utilities
+# =========================
+tqdm>=4.65
+einops>=0.6
+PyYAML>=6.0
+
+# =========================
+# Metrics / ML utils
+# =========================
+scikit-learn>=1.2
+joblib>=1.2
+
+# =========================
+# Optional (used by AdaFace checkpoints)
+# =========================
+pytorch-lightning>=2.0,<2.3
+
+# =========================
+# Logging / Debugging
+# =========================
+rich>=13.3
+wandb>=0.16          # optional: training/figure logging, only used if installed
+
+# =========================
+# Figure generation
+# =========================
+facenet-pytorch>=2.5
+scikit-image>=0.19
+matplotlib>=3.7
+
+# =========================
+# Similarity-pairing pipeline (optional accelerator)
+# =========================
+faiss-cpu>=1.7       # optional: detection/similarity_pairing/build_knn.py falls back to numpy if absent
