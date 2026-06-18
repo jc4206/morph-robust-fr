@@ -1,10 +1,7 @@
 # morph-robust-fr
 
-Code accompanying a master's thesis on detecting face-morphing attacks in
-face-recognition systems. A frozen [AdaFace](https://github.com/mk-minchul/AdaFace)
-IR-50 backbone is paired with a small trainable MLP adapter, trained with a
-quadruplet loss (**TetraLoss**, following Ibsen et al., 2024,
-[arXiv:2401.11598](https://arxiv.org/abs/2401.11598)) to push morph embeddings
+This repository contains the official code for my master's thesis on **detecting face-morphing attacks** in face-recognition systems. We utilize a frozen [AdaFace](https://github.com/mk-minchul/AdaFace)
+IR-50 backbone paired with a small trainable MLP adapter. The model is trained using a quadruplet loss (**TetraLoss**, following Ibsen et al., 2024, [arXiv:2401.11598](https://arxiv.org/abs/2401.11598)), which is specifically designed to push morph embeddings away from the constituent identity embeddings. 
 away from both identities a morph was built from.
 
 This repository contains the full pipeline needed to reproduce the
